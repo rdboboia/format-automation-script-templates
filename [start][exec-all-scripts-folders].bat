@@ -16,12 +16,19 @@ for /D %%f in (%scriptFolderPath%script-pack-*) do (
 	echo Folder executor loop
 	echo ----------------------------------------------------------------------
 	echo Found folder: %%~nxf
-	:: call "%%f"
+	call %utilsPath%\script-pack-executor "%%f"
 	echo ----------------------------------------------------------------------
-	echo Checking error level...
-	call %utilsPath%\check-error-level
-	echo ======================================================================
-	call %utilsPath%\print-spacer 6
-	call %utilsPath%\print-filler 6
-	call %utilsPath%\print-spacer 6
+	echo Checking if restart is required...
+	if %restartRequired%==1 (
+		echo Restart required. No more scripts will be executed for now.
+		echo Press any key to restart now.
+		pause > nul
+		shutdown /R /T 5 /C "Scheduled restart to apply changes (restart in 5 seconds)"
+	) else (
+		echo No restart required. Proceeding with the next pack...
+		echo ======================================================================
+		call %utilsPath%\print-spacer 6
+		call %utilsPath%\print-filler 6
+		call %utilsPath%\print-spacer 6
+	)
 )

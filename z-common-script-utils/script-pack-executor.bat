@@ -1,28 +1,24 @@
-:: Disable command echo ::
-@echo off
-
-:: Variables ::
-set utilsRelativePath=z-common-script-utils
-set scriptFolderPath="%~dp0"
-set restartRequired=0
-
-echo %CD%
+:: Load arguments ::
+set args=%~1
 
 :: Iterate over every script found in defined folder ::
-for /D %%f in (%scriptFolderPath%script-pack-*) do (
+for %%f in (%args%\*.bat) do (
+	
 	:: Change window title ::
 	title Script executor
 	
 	:: Script execution ::
 	echo ======================================================================
 	echo Executor loop
+	echo ======================================================================
+	echo Calling script: %%~f
 	echo ----------------------------------------------------------------------
-	echo Found script: %%~nxf
-	echo Calling %%~nxf...
 	:: call "%%f"
 	echo ----------------------------------------------------------------------
 	echo Checking error level...
-	call %utilsRelativePath%\check-error-level
+	call %utilsPath%\check-error-level
 	echo ======================================================================
-	call %utilsRelativePath%\print-spacer 6
+	call %utilsPath%\print-spacer 6
+	
+	timeout /t 5 /nobreak > nul
 )
