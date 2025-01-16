@@ -3,27 +3,26 @@
 
 :: Variables ::
 set utilsRelativePath=z-common-script-utils
-set scriptFolderPath="C:\Users\RDB_DEV\Desktop\[PFS]\Maintenance and utility scripts"
-set scriptPackFolder="startup-scripts-pack"
+set scriptFolderPath="%~dp0"
 set restartRequired=0
 
 echo %CD%
 
 :: Iterate over every script found in defined folder ::
-for %%f in (%scriptFolderPath%\%scriptPackFolder%\*.bat) do (
+for /D %%f in (%scriptFolderPath%script-pack-*) do (
 	:: Change window title ::
-	title Program installer
+	title Script executor
 	
 	:: Script execution ::
 	echo ======================================================================
 	echo Executor loop
 	echo ----------------------------------------------------------------------
-	echo Found script: %%f
-	echo Calling %%f...
-	call "%%f"
+	echo Found script: %%~nxf
+	echo Calling %%~nxf...
+	:: call "%%f"
 	echo ----------------------------------------------------------------------
 	echo Checking error level...
 	call %utilsRelativePath%\check-error-level
 	echo ======================================================================
-	call print-spacer 6
+	call %utilsRelativePath%\print-spacer 6
 )
