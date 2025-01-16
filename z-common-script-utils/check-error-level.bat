@@ -30,7 +30,6 @@ goto end
 
 :: Default error checking ::
 :default
-echo Default
 if not %errorlevel%==0 (
 	color 0c
 ) else (

@@ -1,3 +1,5 @@
+cd /d "%~dp0"
+
 :: Disable command echo ::
 @echo off
 
@@ -8,6 +10,7 @@ set restartRequired=0
 
 :: Iterate over every script found in defined folder ::
 for /D %%f in (%scriptFolderPath%script-pack-*) do (
+
 	:: Change window title ::
 	title Script executor
 	
@@ -23,7 +26,6 @@ for /D %%f in (%scriptFolderPath%script-pack-*) do (
 		echo Restart required. No more scripts will be executed for now.
 		echo Press any key to restart now.
 		pause > nul
-		shutdown /R /T 5 /C "Scheduled restart to apply changes (restart in 5 seconds)"
 	) else (
 		echo No restart required. Proceeding with the next pack...
 		echo ======================================================================
@@ -32,3 +34,6 @@ for /D %%f in (%scriptFolderPath%script-pack-*) do (
 		call %utilsPath%\print-spacer 6
 	)
 )
+pause
+popd
+:: shutdown /R /T 5 /C "Scheduled restart to apply changes (restart in 5 seconds)"
