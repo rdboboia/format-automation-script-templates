@@ -1,8 +1,18 @@
 :: Load arguments ::
-set args=%~1
+set packExecutorArgs=%~1
+
+:: Vars ::
+set allScriptsOk=1
+
+:: Check if the script pack was already succesfully executed ::
+call %utilsPath%\script-pack-execution-log-manager check
+if %skipPackExecution%==1 (
+	echo Skipping pack execution.
+	goto end
+)
 
 :: Iterate over every script found in defined folder ::
-for %%f in (%args%\*.bat) do (
+for %%f in (%packExecutorArgs%\*.bat) do (
 	
 	:: Change window title ::
 	title Script executor
@@ -13,11 +23,16 @@ for %%f in (%args%\*.bat) do (
 	echo ======================================================================
 	echo Calling script: %%~f
 	echo ----------------------------------------------------------------------
-	:: call "%%f"
+	call "%%f"
 	echo ----------------------------------------------------------------------
 	echo Checking error level...
-	call %utilsPath%\check-error-level
+	call %utilsPath%\check-error-level packExecutor
 	timeout /t 5 /nobreak > nul
 	echo ======================================================================
 	call %utilsPath%\print-spacer 6
+)
+
+:end
+if %allScriptsOk%==1 (
+	call %utilsPath%\script-pack-execution-log-manager storeSuccess
 )

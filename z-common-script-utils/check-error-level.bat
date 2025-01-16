@@ -5,6 +5,7 @@ set args=%~1
 if [%args%]==[] (goto default)
 if %args%==tempFolder (goto manageTempFolder)
 if %args%==winget (goto manageWinget)
+if %args%==packExecutor (goto packExecutor)
 goto default
 
 :: Temp folder error checking ::
@@ -36,6 +37,11 @@ if not %errorlevel%==0 (
 	color 0a
 )
 goto end
+
+:packExecutor
+if not %errorlevel%==0 (
+	set allScriptsOk=0
+)
 
 :: Script end ::
 :end
