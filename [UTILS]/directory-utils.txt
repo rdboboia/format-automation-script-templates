@@ -1,0 +1,22 @@
+The error message is very self explanatory. The file file1.txt is not found.
+
+Because the file name does not include an absolute path, the system tries to find it on the current directory. Your current directory does not contain this file.
+
+Your misconception is that the current directory is not the directory that contains the bat file. Those are two unrelated concepts.
+
+You can easily check by adding this two commands in your bat file
+
+echo BAT directory is %~dp0
+echo Current directory  is %CD%
+you can notice they are different, and that there is a subtle difference in the way the last backslash is appended or not.
+
+So, there are esentially two ways to cope with this problem
+
+either change the current directory to match the expected one
+
+pushd %~dp0
+XCOPY /y "File1.txt" "File2.txt"
+popd
+or specify the full path in the command
+
+XCOPY /y "%~dp0File1.txt" "%~dp0File2.txt"
