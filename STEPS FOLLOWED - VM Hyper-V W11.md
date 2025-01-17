@@ -53,7 +53,7 @@
 	+ Custom overlay layout ⚠
 - WinRAR ✅
 	+ Add license ❌
-- Git 👀
+- Git ✅
 - Git GUI 👀
 - Winget upgrade --all ✅
 	+ Some programs will install with an older version. This should update it to the latest available version.
@@ -70,5 +70,7 @@
 		* Create TEMP folder
 		* Crate EZ-BACKUP shortcut
 		* Create custom wallpaper shortcut
-	+ 
+	+ Shutdown scripts (install + create shortcut on desktop)
+		* Backups
+		* Winget update --all
 - Office?

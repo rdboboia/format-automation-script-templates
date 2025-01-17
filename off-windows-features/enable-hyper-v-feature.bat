@@ -1,4 +1,5 @@
 :: Enable Hyper-V feature ::
 DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
-set restartRequired=1
+:: Requires restart ::
+call %utilsPath%\set-restart-required-flag
