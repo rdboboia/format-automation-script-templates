@@ -3,6 +3,7 @@ set packExecutorArgs=%~1
 
 :: Vars ::
 set allScriptsOk=1
+set skipPackExecution=0
 
 :: Check if the script pack was already succesfully executed ::
 call %utilsPath%\script-pack-execution-log-manager check
@@ -32,7 +33,9 @@ for %%f in (%packExecutorArgs%\*.bat) do (
 	call %utilsPath%\print-spacer 6
 )
 
-:end
+:: Check if all script executions were OK ::
 if %allScriptsOk%==1 (
 	call %utilsPath%\script-pack-execution-log-manager storeSuccess
 )
+
+:end

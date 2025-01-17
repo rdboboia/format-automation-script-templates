@@ -37,5 +37,6 @@ goto end
 :storeSuccess
 :: Write log file to disk ::
 type NUL > %executionLogPath%\%scriptPackFolderName%
+goto end
 
 :end

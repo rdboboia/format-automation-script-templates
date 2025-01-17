@@ -1,7 +1,8 @@
-cd /d "%~dp0"
-
 :: Disable command echo ::
 @echo off
+
+:: Changing execution path just in case; the implementation shouldn't depend on this ::
+cd /d "%~dp0"
 
 :: Variables ::
 set scriptFolderPath="%~dp0"
@@ -28,4 +29,5 @@ for /D %%f in (%scriptFolderPath%script-pack-*) do (
 	call %utilsPath%\print-spacer 6
 	)
 )
+
 pause
