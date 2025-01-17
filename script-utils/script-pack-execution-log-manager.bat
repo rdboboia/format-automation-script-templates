@@ -27,15 +27,15 @@ echo Would you like to retry the execution?
 choice /c yn
 echo %errorlevel%
 
+:: Check decision. If retry is wanted, set flag to 0 and delete log file ::
 if %errorlevel%==1 (
 	set skipPackExecution=0
-	
-	:: Removing log file ::
 	del %executionLogPath%\%scriptPackFolderName%
 )
 goto end
 
 :storeSuccess
+:: Write log file to disk ::
 type NUL > %executionLogPath%\%scriptPackFolderName%
 
 :end
