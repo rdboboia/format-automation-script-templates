@@ -8,4 +8,4 @@ set telemetryFrequencyPath="HKCU\Software\Microsoft\Siuf\Rules"
 reg add %telemetryFrequencyPath% /v NumberOfSIUFInPeriod /t REG_DWORD /d 0 /f
 
 :: Restar required ::
-set restartRequired=1
+call %utilsPath%\restart-manager

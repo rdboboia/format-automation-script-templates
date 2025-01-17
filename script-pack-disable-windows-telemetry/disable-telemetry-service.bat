@@ -8,4 +8,4 @@ sc config %serviceName% start=demand > nul
 sc stop %serviceName% > nul 2>nul
 
 :: Restart required ::
-set restartRequired=1
+call %utilsPath%\restart-manager

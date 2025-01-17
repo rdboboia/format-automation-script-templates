@@ -10,4 +10,4 @@ reg add %activityHistoryPath% /v PublishUserActivities /t REG_DWORD /d 0 /f
 reg add %activityHistoryPath% /v UploadUserActivities /t REG_DWORD /d 0 /f
 
 :: Restar required ::
-set restartRequired=1
+call %utilsPath%\restart-manager
