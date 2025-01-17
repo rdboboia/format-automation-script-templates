@@ -1,8 +1,5 @@
-:: Set title and banner
-call set-title-and-banner "WinRAR"
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "WinRAR"
 
-:: Install
+:: Install ::
 winget install --exact --id RARLab.WinRAR
-
-:: Check error level
-call check-winget-error-level

@@ -1,5 +1,5 @@
 :: Set title and banner ::
-call set-title-and-banner "MSI Afterburner"
+call %utilsPath%\set-title-and-banner "MSI Afterburner"
 
 :: Install ::
 winget install --exact --id Guru3D.Afterburner

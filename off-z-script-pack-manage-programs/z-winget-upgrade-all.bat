@@ -1,8 +1,5 @@
-:: Set title and banner
-call set-title-and-banner "Winget - Update ALL"
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Winget - Update ALL"
 
-:: Install
+:: Update all ::
 winget upgrade --all
-
-:: Check error level
-call check-winget-error-level

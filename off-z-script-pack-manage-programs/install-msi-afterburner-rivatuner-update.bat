@@ -1,8 +1,5 @@
-:: Set title and banner
-call set-title-and-banner "Rivatuner Statistics Server"
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Rivatuner Statistics Server"
 
-:: Install
+:: Install ::
 winget install --exact --id Guru3D.RTSS
-
-:: Check error level
-call check-winget-error-level

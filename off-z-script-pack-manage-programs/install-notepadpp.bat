@@ -1,8 +1,5 @@
-:: Set title and banner
-call set-title-and-banner "Notepad++"
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Notepad++"
 
-:: Install
+:: Install ::
 winget install --exact --id Notepad++.Notepad++
-
-:: Check error level
-call check-winget-error-level
