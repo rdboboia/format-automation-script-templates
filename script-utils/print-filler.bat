@@ -1,11 +1,11 @@
-set iterations=%~1
+set printerIterations=%~1
 
 :loop
 :: Reduce iterations left ::
-set /a iterations=%iterations% - 1
+set /a printerIterations=%printerIterations% - 1
 
-:: Print spacer
+:: Print spacer ::
 echo **********************************************************************************************
 
-:: Repeat while iterations > 0
-if not %iterations% LEQ 0 (goto loop)
+:: Repeat while iterations > 0 ::
+if not %printerIterations% LEQ 0 (goto loop)
