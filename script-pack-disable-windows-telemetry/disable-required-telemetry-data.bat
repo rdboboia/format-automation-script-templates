@@ -14,4 +14,4 @@ set requiredTelemetryPath="HKLM\Software\Policies\Microsoft\Windows\DataCollecti
 reg add %requiredTelemetryPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
 
 :: Restar required ::
-set restartRequired=1
+call %utilsPath%\restart-manager

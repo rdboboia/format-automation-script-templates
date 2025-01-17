@@ -1,0 +1,5 @@
+if "%someVar%"=="" (
+	do something
+)
+
+the if will execute if the someVar is empty; without the double quotes on both sides it will throw an error
