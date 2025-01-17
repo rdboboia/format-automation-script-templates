@@ -56,6 +56,7 @@
 
 
 # PENDING 👀
+- Generic error handler?
 - Winget auto updater
 	+ Winget update: checks for updates
 	+ Winget update --all: installs all available updates
