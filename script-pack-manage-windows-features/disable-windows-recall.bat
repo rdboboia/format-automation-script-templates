@@ -2,4 +2,4 @@
 Dism /Online /Disable-Feature /Featurename:Recall
 
 :: Requires restart ::
-set restartRequired=1
+call %utilsPath%\restart-manager

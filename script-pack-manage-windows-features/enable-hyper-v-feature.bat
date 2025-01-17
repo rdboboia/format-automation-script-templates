@@ -2,4 +2,4 @@
 DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
 
 :: Requires restart ::
-call %utilsPath%\set-restart-required-flag
+call %utilsPath%\restart-manager
