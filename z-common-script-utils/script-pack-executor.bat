@@ -26,7 +26,7 @@ for %%f in (%packExecutorArgs%\*.bat) do (
 	call "%%f"
 	echo ----------------------------------------------------------------------
 	echo Checking error level...
-	call %utilsPath%\check-error-level packExecutor
+	call %utilsPath%\check-error-level
 	timeout /t 5 /nobreak > nul
 	echo ======================================================================
 	call %utilsPath%\print-spacer 6

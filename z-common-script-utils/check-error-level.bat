@@ -1,12 +1,17 @@
+:: TODO: have only 1 general method
+
 :: Load arguments ::
-set args=%~1
+set checkErrorArgs=%~1
+
+
 
 :: Select logic for arguments ::
-if [%args%]==[] (goto default)
-if %args%==tempFolder (goto manageTempFolder)
-if %args%==winget (goto manageWinget)
-if %args%==packExecutor (goto packExecutor)
+if [%checkErrorArgs%]==[] (goto default)
+if %checkErrorArgs%==tempFolder (goto manageTempFolder)
+if %checkErrorArgs%==winget (goto manageWinget)
 goto default
+
+
 
 :: Temp folder error checking ::
 :manageTempFolder
@@ -20,28 +25,33 @@ if %errorlevel%==0 (
 )
 goto end
 
+
+
 :: Winget error checking ::
+:: -1978335189 - already installeed and no updates available
+:: -1978335212 - package not found (already uninstalled)
 :manageWinget
-if not %errorlevel%==0 if not %errorlevel%==-1978335189 (
+if not %errorlevel%==0 if not %errorlevel%==-1978335189 if not %errorlevel%==-1978335212 (
 	color 0c
+	set allScriptsOk=0
 ) else (
 	color 0a
 )
 goto end
+
+
 
 :: Default error checking ::
 :default
 if not %errorlevel%==0 (
 	color 0c
+	set allScriptsOk=0
 ) else (
 	color 0a
 )
 goto end
 
-:packExecutor
-if not %errorlevel%==0 (
-	set allScriptsOk=0
-)
+
 
 :: Script end ::
 :end
