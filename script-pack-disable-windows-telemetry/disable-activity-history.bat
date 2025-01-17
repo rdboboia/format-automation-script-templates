@@ -2,7 +2,7 @@
 title Disable activity history
 
 :: Registry folder paths ::
-set activityHistoryPath="HKCU\Software\Microsoft\Siuf\Rules"
+set activityHistoryPath="HKLM\SOFTWARE\Policies\Microsoft\Windows\System"
 
 :: Modify registry to apply changes ::
 reg add %activityHistoryPath% /v EnableActivityFeed /t REG_DWORD /d 0 /f
