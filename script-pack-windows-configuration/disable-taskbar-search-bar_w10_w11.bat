@@ -6,4 +6,5 @@ title Disable task bar search bar
 :: Changes the registry to disable Windows Update Delivery Optimization.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v SearchboxTaskbarMode /t REG_DWORD /d 0 /f
 
-:: No restart required.
+:: Requires restart
+call %utilsPath%\restart-manager

@@ -1,2 +1,0 @@
-- leave a trace / file when a folder was fully executed to ask the next time if to skip or to repeat
-	=> DONE :D

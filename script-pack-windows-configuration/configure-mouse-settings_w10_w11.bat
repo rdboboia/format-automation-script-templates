@@ -14,5 +14,5 @@ reg add %mousePath% /v MouseSpeed /t REG_SZ /d 0 /f
 reg add %mousePath% /v MouseThreshold1 /t REG_SZ /d 0 /f
 reg add %mousePath% /v MouseThreshold2 /t REG_SZ /d 0 /f
 
-:: Sets the restart required flag
-set restartRequired=1
+:: Requires restart
+call %utilsPath%\restart-manager

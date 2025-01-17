@@ -13,5 +13,5 @@ reg add %stickyKeysPath% /v Flags /t REG_SZ /d 506 /f
 :: Enables toggle keys sound (might affect multiple settings)
 reg add %toggleKeysPath% /v Flags /t REG_SZ /d 63 /f
 
-:: Sets the restart required flag
-set restartRequired=1
+:: Requires restart
+call %utilsPath%\restart-manager

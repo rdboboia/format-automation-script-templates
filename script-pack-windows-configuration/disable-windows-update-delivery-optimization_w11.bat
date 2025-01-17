@@ -6,4 +6,5 @@ title Change Windows Update Delivery Optimization
 :: Changes the registry to disable Windows Update Delivery Optimization.
 reg add "HKEY_USERS\S-1-5-20\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Settings" /v DownloadMode /t REG_DWORD /d 0 /f
 
-:: No restart required.
+:: Requires restart
+call %utilsPath%\restart-manager

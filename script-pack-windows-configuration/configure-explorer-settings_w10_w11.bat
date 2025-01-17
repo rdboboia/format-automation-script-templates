@@ -16,4 +16,5 @@ reg add %explorerPath% /v Hidden /t REG_DWORD /d 2 /f
 :: Show encrypted and compressed files with a different color.
 reg add %explorerPath% /v ShowEncryptCompressedColor /t REG_DWORD /d 1 /f
 
-:: Does not require restart. Changes are applied immediately (open windows must be refreshed).
+:: Requires restart
+call %utilsPath%\restart-manager

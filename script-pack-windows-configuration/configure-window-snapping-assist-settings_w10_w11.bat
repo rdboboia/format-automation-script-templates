@@ -7,5 +7,5 @@ set snapAssistPath="HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Adva
 :: Show file extensions
 reg add %snapAssistPath% /v SnapAssist /t REG_DWORD /d 0 /f
 
-:: Requires restart ::
-set restartRequired=1
+:: Requires restart
+call %utilsPath%\restart-manager
