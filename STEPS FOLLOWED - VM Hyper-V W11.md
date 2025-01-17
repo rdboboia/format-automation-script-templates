@@ -20,8 +20,9 @@
 	+ Disable search bar ✅
 	+ Disable widgets ❌
 
-### Windows optional features
+### Windows features
 - Install Hyper-V ✅
+- Remove Recall ✅
 
 ### Explorer
 - See extensions ✅
@@ -50,16 +51,14 @@
 	+ Add license ❌
 - Git 👀
 - Git GUI 👀
+- Winget upgrade --all ✅
+	+ Some programs will install with an older version. This should update it to the latest available version.
 
 
 # PENDING 👀
 - Winget auto updater
 	+ Winget update: checks for updates
 	+ Winget update --all: installs all available updates
-- Recall
-	Check If Recall Is ON or OFF:
-	Open up the command prompt window and type in this command
-	Dism /Online /Get-Featureinfo /Featurename:Recall 
 - Utiity scripts installation
 	+ Startup scripts
 		* Set power plan to balanced
@@ -67,6 +66,4 @@
 		* Crate EZ-BACKUP shortcut
 		* Create custom wallpaper shortcut
 	+ 
-
-	Disable RECALL: Dism /Online /Disable-Feature /Featurename:Recall 
 - Office?
