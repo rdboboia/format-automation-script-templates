@@ -64,6 +64,7 @@
 
 
 # TODO 👀
+- Check admin privileges before proceeding with scripts (most of the scripts need it)
 - Generic error handler?
 - Utiity scripts installation
 	+ Startup scripts
