@@ -1,5 +1,3 @@
-:: A quick way of changing some explorer settings regarding file extensions and hidden files.
-
 :: Sets the title of the window
 title Explorer Settings
 
