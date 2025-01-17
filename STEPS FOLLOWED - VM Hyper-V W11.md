@@ -21,7 +21,9 @@
 	+ Disable widgets ❌
 - Windows Telemetry
 	+ Disabled "DiagTrack" service ✅
-	+ Disabled required telemetry data ✅ 
+	+ Disabled required telemetry data ✅
+	+ Set telemetry frequency to never ✅
+	+ Disable activity history ✅
 
 ### Windows features
 - Install Hyper-V ✅
@@ -59,7 +61,7 @@
 	+ Some programs will install with an older version. This should update it to the latest available version.
 
 
-# PENDING 👀
+# TODO 👀
 - Generic error handler?
 - Winget auto updater
 	+ Winget update: checks for updates
@@ -73,4 +75,7 @@
 	+ Shutdown scripts (install + create shortcut on desktop)
 		* Backups
 		* Winget update --all
+- Some programs might be reinstalled by windows after an update
+	+ The uninstall scripts might need to be executed periodically
+		* They should be inserted in the startup or shutdown group
 - Office?
