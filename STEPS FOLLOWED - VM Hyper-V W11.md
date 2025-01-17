@@ -19,6 +19,9 @@
 	+ Disable web search ✅
 	+ Disable search bar ✅
 	+ Disable widgets ❌
+- Windows Telemetry
+	+ Disabled "DiagTrack" service ✅
+	+ Disabled required telemetry data ✅ 
 
 ### Windows features
 - Install Hyper-V ✅
@@ -34,7 +37,8 @@
 ### Programs
 - Eclipse Adoptium Temurin 17 JDK with HotSpot ✅
 - Firefox ✅
-	+ Plugin UBlock Origin ⚠
+	+ Plugin UBlock Origin ❌
+		* Possible with account sync 👀
 - Notepad++ ✅
 	+ Plugin Markdown Panel ⚠
 - HWiNFO ✅
