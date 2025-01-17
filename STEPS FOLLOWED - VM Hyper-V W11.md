@@ -64,11 +64,7 @@
 
 
 # TODO 👀
-- Disable or uninstall widgets
 - Generic error handler?
-- Winget auto updater
-	+ Winget update: checks for updates
-	+ Winget update --all: installs all available updates
 - Utiity scripts installation
 	+ Startup scripts
 		* Set power plan to balanced
