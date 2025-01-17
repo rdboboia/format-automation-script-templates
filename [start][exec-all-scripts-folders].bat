@@ -5,7 +5,7 @@ cd /d "%~dp0"
 
 :: Variables ::
 set scriptFolderPath="%~dp0"
-set utilsPath=%scriptFolderPath%z-common-script-utils
+set utilsPath=%scriptFolderPath%script-utils
 set restartRequired=0
 
 :: Iterate over every script found in defined folder ::
