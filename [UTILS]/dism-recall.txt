@@ -1,0 +1,4 @@
+Check If Recall Is ON or OFF:
+Open up the command prompt window and type in this command
+Dism /Online /Get-Featureinfo /Featurename:Recall
+Disable RECALL: Dism /Online /Disable-Feature /Featurename:Recall 
