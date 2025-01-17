@@ -1,7 +1,7 @@
 :: Disable Windows 11's taskbar widgets.
 
-:: Sets the title of the window.
-title Disable taskbar widgets
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Windows Taskbar - Disable Widgets"
 
 :: Changes the registry to disable taskbar widgets.
 :: reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarDa /t REG_DWORD /d 0 /f

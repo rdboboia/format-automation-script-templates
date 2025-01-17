@@ -1,12 +1,13 @@
-:: Changes the default admin priviledges prompt to ask for the password instead of just asking for yes/no permission.
+:: Changes the default admin priviledges prompt to ask for the password instead of just asking for yes/no permission ::
 
-:: Sets the title of the window
-title Change default admin priviledges prompt
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Configure windows admin elevation prompt"
 
-:: Changes the registry to ask for password on admin privilege prompt.
+:: Changes the registry to ask for password on admin privilege prompt ::
 reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System /v ConsentPromptBehaviorAdmin /t REG_DWORD /d 1 /f
 
-:: No restart required. Changes should apply immediately.
+:: Requires restart ::
+call %utilsPath%\restart-manager
 
 :: Microsoft documentation: https://learn.microsoft.com/es-es/openspecs/windows_protocols/ms-gpsb/341747f5-6b5d-4d30-85fc-fa1cc04038d4
 :: 0x00000000 - This option allows the Consent Admin to perform an operation that requires elevation without consent or credentials.
