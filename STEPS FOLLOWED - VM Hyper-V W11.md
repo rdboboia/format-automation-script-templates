@@ -19,11 +19,13 @@
 	+ Disable web search ✅
 	+ Disable search bar ✅
 	+ Disable widgets ❌
-- Windows Telemetry
+- Windows telemetry & privacy
 	+ Disabled "DiagTrack" service ✅
 	+ Disabled required telemetry data ✅
 	+ Set telemetry frequency to never ✅
 	+ Disable activity history ✅
+	+ Disable personal inking and typing dictionaries ✅
+	+ Search permissions ❌
 
 ### Windows features
 - Install Hyper-V ✅
@@ -62,6 +64,7 @@
 
 
 # TODO 👀
+- Disable or uninstall widgets
 - Generic error handler?
 - Winget auto updater
 	+ Winget update: checks for updates
