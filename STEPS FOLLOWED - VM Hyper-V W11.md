@@ -65,6 +65,7 @@
 
 # TODO 👀
 - Check admin privileges before proceeding with scripts (most of the scripts need it)
+- Check CCT Windows Utils
 - Generic error handler?
 - Utiity scripts installation
 	+ Startup scripts
