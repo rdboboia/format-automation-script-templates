@@ -4,32 +4,36 @@
 - ⚠ - Manual configuration required (no available script for now).
 - ❌ - Automation not possible for now.
 
-### Essentials (must be done BEFORE Windows tuneup)
-- SoftPerfect RAM Disk (ImDisk is a good free alternative) ✅
-	+ Program Configuration ⚠
+
+
+
+
+
+# Essentials (must be done BEFORE Windows tuneup)
+- ImDisk Toolkit RAMDisk ✅
+	+ RAMDisk configuration ❌
 	+ Move temp folder to RAMDisk ✅
+	+ Hide temp folder ✅
 
-### Windows
-- Windows Update
-	+ Install latest windows updates ⚠
-	+ Define custom active hours to avoid restarts ✅
-	+ Disable Windows Update Delivery Optimization ✅
-- Install GPU Drivers ⚠
-- Personalizar barra de tareas 
-	+ Disable web search ✅
-	+ Disable search bar ✅
-	+ Disable widgets ❌
-- Windows telemetry & privacy
-	+ Disabled "DiagTrack" service ✅
-	+ Disabled required telemetry data ✅
-	+ Set telemetry frequency to never ✅
-	+ Disable activity history ✅
-	+ Disable personal inking and typing dictionaries ✅
-	+ Search permissions ❌
 
-### Windows features
-- Install Hyper-V ✅
-- Remove Recall ✅
+
+
+
+
+# Windows
+
+## Windows Update
+- Install latest windows updates ⚠
+- Install optional updates + drivers ⚠
+- Define custom active hours to avoid restarts ✅
+- Disable Windows Update Delivery Optimization ✅
+
+## Personalization
+
+### Task Bar
+- Disable web search ✅
+- Disable search bar ✅
+- Disable widgets ❌
 
 ### Explorer
 - See extensions ✅
@@ -38,11 +42,31 @@
 - Order by type ❌
 	+ Apply to all general folders ❌
 
-### Programs
+## Telemetry & Privacy
+- Disabled "DiagTrack" service ✅
+- Disabled required telemetry data ✅
+- Set telemetry frequency to never ✅
+- Disable activity history ✅
+- Disable personal inking and typing dictionaries ✅
+- Search permissions ❌
+
+## Features
+- Install Hyper-V ✅
+- Install Windows Sandbox ✅
+- Remove Recall ✅
+
+# Drivers
+- Manually install your PC's required drivers ❌
+
+
+
+
+
+
+# Programs
 - Eclipse Adoptium Temurin 17 JDK with HotSpot ✅
 - Firefox ✅
-	+ Plugin UBlock Origin ❌
-		* Possible with account sync 👀
+	+ Configuration can be stored and restored with account sync ✅
 - Notepad++ ✅
 	+ Plugin Markdown Panel ⚠
 - HWiNFO ✅
@@ -62,6 +86,10 @@
 - Git GUI 👀
 - Winget upgrade --all ✅
 	+ Some programs will install with an older version. This should update it to the latest available version.
+
+
+
+
 
 
 # TODO 👀
