@@ -6,7 +6,7 @@ However, I think that some of my work can be useful for the rest of the world, s
 # Compatibility
 TLDR: Windows 11 only; Windows 10 partially.
 
-Since Windows 10 support is ending this year (2025) all scripts are tested and intended do be used in Windows 11. Most scripts should also work on Windows 10, but compatibility is not tested nor assured.
+Since Windows 10 support is ending this year (2025) all scripts are tested and intended do be used in Windows 11. Most scripts should also work on Windows 10, but compatibility is not always tested nor assured.
 
 # Current state
 This project is still in a very early state. I've been working on it for a week now almost non-stop, but there is still a lot of work to do.
