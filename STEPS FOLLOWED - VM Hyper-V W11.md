@@ -64,26 +64,36 @@
 
 
 # Programs
+
+## Install
 - Eclipse Adoptium Temurin 17 JDK with HotSpot ✅
-- Firefox ✅
-	+ Configuration can be stored and restored with account sync ✅
-- Notepad++ ✅
-	+ Plugin Markdown Panel ⚠
+- Git ✅
 - HWiNFO ✅
 	+ Configuration ⚠
 		* Autostart with Windows
 		* Start minimized
 		* Show sensors only
 		* Define alerts (if desired)
+- Mozilla Firefox ✅
+	+ Configuration can be stored and restored with account sync ✅
 - MSI Afterburner ✅
 	+ Configuration ⚠
 - RivaTuner (included with MSI Afterburner, but sometimes outdated) ✅
 	+ Configuration ⚠
 	+ Custom overlay layout ⚠
+- Notepad++ ✅
+	+ Plugin Markdown Panel ⚠
 - WinRAR ✅
 	+ Add license ❌
-- Git ✅
-- Git GUI 👀
+
+## Optional
+- Google Quick Share ✅
+- Git GUI (optional) 👀
+
+## Uninstall
+<LIST_TODO>
+
+## Updates
 - Winget upgrade --all ✅
 	+ Some programs will install with an older version. This should update it to the latest available version.
 
