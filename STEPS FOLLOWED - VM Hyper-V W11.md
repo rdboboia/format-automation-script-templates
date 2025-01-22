@@ -65,6 +65,7 @@
 
 # TODO 👀
 - Check admin privileges before proceeding with scripts (most of the scripts need it)
+- Check Unattend Generator: https://schneegans.de/windows/unattend-generator/
 - Check CCT Windows Utils
 - Generic error handler?
 - Utiity scripts installation
