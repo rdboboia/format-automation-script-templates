@@ -50,6 +50,7 @@
 		* Autostart with Windows
 		* Start minimized
 		* Show sensors only
+		* Define alerts (if desired)
 - MSI Afterburner ✅
 	+ Configuration ⚠
 - RivaTuner (included with MSI Afterburner, but sometimes outdated) ✅
