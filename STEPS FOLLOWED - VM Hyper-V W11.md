@@ -94,19 +94,26 @@
 
 # TODO 👀
 - Check admin privileges before proceeding with scripts (most of the scripts need it)
-- Check Unattend Generator: https://schneegans.de/windows/unattend-generator/
-- Check CCT Windows Utils
-- Generic error handler?
+- Office?
+
+# For later
 - Utiity scripts installation
 	+ Startup scripts
 		* Set power plan to balanced
-		* Create TEMP folder
-		* Crate EZ-BACKUP shortcut
-		* Create custom wallpaper shortcut
+		* Hide RAMDisk TEMP folder
+		* Create EZ-BACKUP shortcut
+		* Create custom screensaver shortcut
 	+ Shutdown scripts (install + create shortcut on desktop)
 		* Backups
 		* Winget update --all
 - Some programs might be reinstalled by windows after an update
 	+ The uninstall scripts might need to be executed periodically
 		* They should be inserted in the startup or shutdown group
-- Office?
+
+# Other useful tools
+- Check Unattend Generator: https://schneegans.de/windows/unattend-generator/
+	+ Allows you to create an unnatended windows installataion + configuration.
+		* Useful for new installations.
+- Check CTT Windows Utils: https://github.com/ChrisTitusTech/winutil
+	+ Allos you to configure your current Windows system using a GUI.
+		* Useful for already installed Windows.
