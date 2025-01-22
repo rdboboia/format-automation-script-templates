@@ -67,7 +67,6 @@
 
 ## Install
 - Eclipse Adoptium Temurin 17 JDK with HotSpot ✅
-- Git ✅
 - HWiNFO ✅
 	+ Configuration ⚠
 		* Autostart with Windows
@@ -88,10 +87,15 @@
 
 ## Optional
 - Google Quick Share ✅
-- Git GUI (optional) 👀
+- Git ✅
+- Git GUI ✅
 
 ## Uninstall
-<LIST_TODO>
+- Microsoft Dev Home
+- Microsoft Teams
+- Microsoft 365 Copilot
+- Microsoft Interviewer Copilot
+- Microsoft One Drive
 
 ## Updates
 - Winget upgrade --all ✅
