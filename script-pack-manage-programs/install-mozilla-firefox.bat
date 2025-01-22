@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer "Mozilla Firefox" Mozilla.Firefox
+call %utilsPath%\winget-installer "Mozilla Firefox" "Mozilla.Firefox"
