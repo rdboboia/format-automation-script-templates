@@ -42,6 +42,10 @@
 - Order by type ❌
 	+ Apply to all general folders ❌
 
+### Snipping Tool
+- Disable screenshot auto saving ❌
+- Disable screen recoring auto saving ❌
+
 ## Telemetry & Privacy
 - Disabled "DiagTrack" service ✅
 - Disabled required telemetry data ✅
@@ -91,15 +95,19 @@
 - Git GUI ✅
 
 ## Uninstall
-- Microsoft Dev Home
-- Microsoft Teams
-- Microsoft 365 Copilot
-- Microsoft Interviewer Copilot
-- Microsoft One Drive
+- Microsoft Dev Home ✅
+- Microsoft Teams ✅
+- Microsoft 365 Copilot ✅
+- Microsoft Interviewer Copilot ✅
+- Microsoft One Drive ✅
 
 ## Updates
 - Winget upgrade --all ✅
 	+ Some programs will install with an older version. This should update it to the latest available version.
+
+## Not available in Winget ❌
+- Spring Tool Suite ❌
+- Oracle Database XE ❌
 
 
 
