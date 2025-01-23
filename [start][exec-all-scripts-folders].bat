@@ -22,12 +22,15 @@ for /D %%f in (%scriptFolderPath%script-pack-*) do (
 	echo Found folder: %%~nxf
 	call %utilsPath%\script-pack-executor "%%f"
 	echo ----------------------------------------------------------------------
-	call %utilsPath%\restart-manager check
+	:: OFF :: call %utilsPath%\restart-manager check
 	echo ======================================================================
 	call %utilsPath%\print-spacer 6
 	call %utilsPath%\print-filler 6
 	call %utilsPath%\print-spacer 6
 	)
 )
+
+:: Check restart flag ::
+call %utilsPath%\restart-manager check
 
 pause
