@@ -17,8 +17,8 @@ powercfg /setacvalueindex %powerPlanGuid% SUB_SLEEP STANDBYIDLE 0
 REM powercfg /setdcvalueindex %powerPlanGuid% SUB_SLEEP STANDBYIDLE 0
 
 :: Limit the max CPU usage (may vary from system to system) ::
-powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 95
-REM powercfg /setdcvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 95
+powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 99
+REM powercfg /setdcvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 99
 
 :: Disable screen shutdown ::
 powercfg /setacvalueindex %powerPlanGuid% SUB_VIDEO VIDEOIDLE 0
