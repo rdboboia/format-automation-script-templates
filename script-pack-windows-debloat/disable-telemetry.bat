@@ -44,9 +44,21 @@ set wFeedsPath="HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds"
 set explorerPoliciesPath="HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
 set userProfEngPath="HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement"
 
-:: Disable telemetry services registry ::
+:: Disable telemetry data collection ::
+reg add %cvDataCollectionPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
+reg add %wDataCollectionPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
 
-
+:: Disable "recommended" app installs ::
+reg add %contentDevManPath% /v ContentDeliveryAllowed /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v OemPreInstalledAppsEnabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v PreInstalledAppsEnabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v PreInstalledAppsEverEnabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SilentInstalledAppsEnabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SubscribedContent-338387Enabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SubscribedContent-338388Enabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SubscribedContent-338389Enabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SubscribedContent-353698Enabled /t REG_DWORD /d 0 /f
+reg add %contentDevManPath% /v SystemPaneSuggestionsEnabled /t REG_DWORD /d 0 /f
 
 :: Requires restart ::
 call %utilsPath%\restart-manager
