@@ -5,6 +5,8 @@ call %utilsPath%\set-title-and-banner "Windows Taskbar - Disable Widgets"
 
 :: Changes the registry to disable taskbar widgets.
 :: reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v TaskbarDa /t REG_DWORD /d 0 /f
+:: reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" /v EnableFeeds /t REG_DWORD /d 0 /f
+:: reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds" /v ShellFeedsTaskbarViewMode /t REG_DWORD /d 2 /f
 
 echo CAN'T CHANGE THIS AUTOMATICALLY DUE TO PERMISSION RESTRICTIONS.
 echo The program will pause and wait for you tu manually disable this.
