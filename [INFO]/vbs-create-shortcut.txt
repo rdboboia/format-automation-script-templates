@@ -1,0 +1,78 @@
+
+Windows Script Host
+CreateShortcut Method
+See Also  Example
+
+Creates a new shortcut, or opens an existing shortcut.
+
+object.CreateShortcut(strPathname) 
+Collapse imageArguments
+object
+WshShell object.
+
+strPathname
+String value indicating the pathname of the shortcut to create.
+
+Collapse imageRemarks
+The CreateShortcut method returns either a WshShortcut object or a WshURLShortcut object. Simply calling the CreateShortcut method does not result in the creation of a shortcut. The shortcut object and changes you may have made to it are stored in memory until you save it to disk with the Save method. To create a shortcut, you must:
+
+Create an instance of a WshShortcut object.
+
+Initialize its properties.
+
+Save it to disk with the Save method.
+
+NoteNote
+A common problem is putting arguments in the TargetPath property of the shortcut object, which doesn't work. All arguments to the shortcut must be put in the Arguments property.
+
+Collapse imageExample
+Collapse imageDescription
+The following example creates a WshShell object and uses the CreateShortcut method to create two shortcuts.
+
+ 	CopyCode imageCopy Code
+<package>
+   <job id="vbs">
+      <script language="VBScript">
+         set WshShell = WScript.CreateObject("WScript.Shell")
+         strDesktop = WshShell.SpecialFolders("Desktop")
+         set oShellLink = WshShell.CreateShortcut(strDesktop & "\Shortcut Script.lnk")
+         oShellLink.TargetPath = WScript.ScriptFullName
+         oShellLink.WindowStyle = 1
+         oShellLink.Hotkey = "CTRL+SHIFT+F"
+         oShellLink.IconLocation = "notepad.exe, 0"
+         oShellLink.Description = "Shortcut Script"
+         oShellLink.WorkingDirectory = strDesktop
+         oShellLink.Save
+         set oUrlLink = WshShell.CreateShortcut(strDesktop & "\Microsoft Web Site.url")
+         oUrlLink.TargetPath = "http://www.microsoft.com"
+         oUrlLink.Save
+      </script>
+   </job>
+
+   <job id="js">
+      <script language="JScript">
+         var WshShell = WScript.CreateObject("WScript.Shell");
+         strDesktop = WshShell.SpecialFolders("Desktop");
+         var oShellLink = WshShell.CreateShortcut(strDesktop + "\\Shortcut Script.lnk");
+         oShellLink.TargetPath = WScript.ScriptFullName;
+         oShellLink.WindowStyle = 1;
+         oShellLink.Hotkey = "CTRL+SHIFT+F";
+         oShellLink.IconLocation = "notepad.exe, 0";
+         oShellLink.Description = "Shortcut Script";
+         oShellLink.WorkingDirectory = strDesktop;
+         oShellLink.Save();
+         var oUrlLink = WshShell.CreateShortcut(strDesktop + "\\Microsoft Web Site.url");
+         oUrlLink.TargetPath = "http://www.microsoft.com";
+         oUrlLink.Save();
+      </script>
+   </job>
+</package>
+Applies To:
+WshShell Object
+
+Collapse imageSee Also
+Reference
+WshShortcut Object
+WshUrlShortcut Object
+Concepts
+Running Your Scripts
