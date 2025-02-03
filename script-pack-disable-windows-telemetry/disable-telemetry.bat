@@ -40,7 +40,8 @@ set userProfEngPath="HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileE
 
 :: Disable telemetry data collection.
 reg add %cvDataCollectionPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
-reg add %wDataCollectionPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
+:: Already set by other script.
+:: reg add %wDataCollectionPath% /v AllowTelemetry /t REG_DWORD /d 0 /f
 reg add %wDataCollectionPath% /v DoNotShowFeedbackNotifications /t REG_DWORD /d 1 /f
 reg add %siufRulesPath% /v NumberOfSIUFInPeriod /t REG_DWORD /d 0 /f
 reg add %wCloudContentPath% /v DisableTailoredExperiencesWithDiagnosticData /t REG_DWORD /d 1 /f
