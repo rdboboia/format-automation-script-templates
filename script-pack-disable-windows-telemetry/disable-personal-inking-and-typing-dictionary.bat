@@ -1,5 +1,5 @@
-:: Sets the title of the window ::
-title Disable personalized dictionary
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Disable personalized dictionary"
 
 :: Registry folder paths ::
 set persPath="HKCU\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\InkingAndTypingPersonalization"

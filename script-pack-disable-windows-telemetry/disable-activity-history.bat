@@ -1,5 +1,5 @@
-:: Sets the title of the window ::
-title Disable activity history
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Disable activity history"
 
 :: Registry folder paths ::
 set activityHistoryPath="HKLM\SOFTWARE\Policies\Microsoft\Windows\System"

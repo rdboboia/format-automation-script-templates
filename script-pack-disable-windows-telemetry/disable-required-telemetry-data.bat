@@ -1,5 +1,5 @@
-:: Sets the title of the window ::
-title Disable required telemetry data
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Disable required telemetry data"
 
 :: Registry folder paths ::
 set requiredTelemetryPath="HKLM\Software\Policies\Microsoft\Windows\DataCollection"

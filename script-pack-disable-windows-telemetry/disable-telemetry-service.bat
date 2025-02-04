@@ -1,3 +1,6 @@
+:: Set title and banner ::
+call %utilsPath%\set-title-and-banner "Disable telemetry service"
+
 :: Vars ::
 set serviceName=DiagTrack
 
