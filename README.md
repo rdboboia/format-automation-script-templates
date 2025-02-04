@@ -13,3 +13,6 @@ This project is still in a very early state. I've been working on it for a week 
 
 # Changelog
 You can kinda keep track of the changes by checking out the "STEPS FOLLOWED - VM Hyper-V W11.md" file.
+
+# Credit
+Credit to Chris Titus and its CTT Windows Tool (https://christitus.com/windows-tool/) which helped me find and implement some tweaks.
