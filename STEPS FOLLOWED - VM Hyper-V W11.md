@@ -115,6 +115,7 @@
 
 
 # TODO 👀
+- Ask for each folder pack if its execution is desired instead of an per file prompt
 - Check admin privileges before proceeding with scripts (most of the scripts need it)
 - Office?
 
@@ -138,4 +139,4 @@
 		* Useful for new installations.
 - Check CTT Windows Utils: https://github.com/ChrisTitusTech/winutil
 	+ Allos you to configure your current Windows system using a GUI.
-		* Useful for already installed Windows.
+		* Useful for already installed Windows. Some scripts here were inspired by this tool.
