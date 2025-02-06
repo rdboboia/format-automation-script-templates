@@ -7,6 +7,8 @@ Implement in JAVA or any other programming language a way to automatically insta
 
 ### Plugins
 - MarkdownPanel
+- JSON Tools
+- Compare
 
 ### API to get the updated plugin list
 https://raw.githubusercontent.com/notepad-plus-plus/nppPluginList/master/src/pl.x64.json
