@@ -7,12 +7,16 @@ set targetPath=C:\Windows\System32
 set targetFile=Ribbons.scr
 set targetFilePath=%targetPath%\%targetFile%
 
+:: Might need to be manually set if the admin account is not the current active account or if using OneDrive desktop.
+set userProfilePath=%userprofile%
+:: set userProfilePath="<your_path_here>"
+
 :: Leave empty if no hoykey is desired.
 set hotKey=CTRL+ALT+S
 
 :createVbsScript
 echo Set oWS = WScript.CreateObject("WScript.Shell") > CreateShortcut.vbs
-echo sLinkFile = "%userprofile%\Desktop\%shortcutName%.lnk" >> CreateShortcut.vbs
+echo sLinkFile = "%userProfilePath%\Desktop\%shortcutName%.lnk" >> CreateShortcut.vbs
 echo Set oLink = oWS.CreateShortcut(sLinkFile) >> CreateShortcut.vbs
 echo oLink.TargetPath = "%targetFilePath%" >> CreateShortcut.vbs
 echo oLink.WorkingDirectory = "%targetPath%" >> CreateShortcut.vbs
