@@ -81,9 +81,12 @@
 	+ Configuration can be stored and restored with account sync ✅
 - MSI Afterburner ✅
 	+ Configuration ⚠
+		* Can be saved and restored with the configuration files.
 - RivaTuner (included with MSI Afterburner, but sometimes outdated) ✅
 	+ Configuration ⚠
+		* Can be saved and restored with the configuration files.
 	+ Custom overlay layout ⚠
+		* Can be saved and restored with the configuration files.
 - Notepad++ ✅
 	+ Plugin Markdown Panel ⚠
 - WinRAR ✅
