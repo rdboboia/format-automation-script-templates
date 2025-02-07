@@ -3,6 +3,11 @@ This is a personal project that I'm currently working on to automate as much as 
 As I've already mentioned, this is something personal: my desired programs, my desired settings, etc.
 However, I think that some of my work can be useful for the rest of the world, so feel free to check it out and use it if any script fits your needs :)
 
+# Considerations BEFORE execution
+- Some scripts requier admin privileges, so the best way is to execute the main script as admin.
+- Some scripts are sensible to user path variations. This can happen if the admin account is not the same as the target user. I'm assuming the target user is the admin executor.
+- These scripts are intended for my personal use. Don't blind execute them as they might not fit your personal case. Check all scripts before execution. No harm should be done, but some errors here and there can appear.
+
 # Compatibility
 TLDR: Windows 11 only; Windows 10 partially.
 
