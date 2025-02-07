@@ -126,10 +126,7 @@
 # For later
 - Utiity scripts installation
 	+ Startup scripts
-		* Set power plan to balanced
 		* Hide RAMDisk TEMP folder
-		* Create EZ-BACKUP shortcut
-		* Create custom screensaver shortcut
 	+ Shutdown scripts (install + create shortcut on desktop)
 		* Backups
 		* Winget update --all
