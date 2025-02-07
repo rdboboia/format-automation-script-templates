@@ -7,6 +7,5 @@ set startupPath="C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Men
 
 :: Install all scripts inside script folder.
 for %%f in (%scriptsToInstallPath%\*.bat) do (
-	echo Copying %%f to startup folder...
-	copy "%%f" "%startupPath%\%%~f"
+	copy "%%f" %startupPath%\%%~nxf
 )
