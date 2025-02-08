@@ -1,4 +1,6 @@
-:: Balanced power plan configuration. It is intended to be used for desktops with SSDs. This configuration should enable better power management while also improving responsiveness.
+:: Balanced power plan configuration.
+:: It is intended to be used for desktops with SSDs.
+:: This configuration should enable better power management while also improving responsiveness.
 
 :: Set title and banner ::
 call %utilsPath%\set-title-and-banner "Configure balanced power plan"
@@ -20,6 +22,10 @@ REM powercfg /setdcvalueindex %powerPlanGuid% SUB_SLEEP STANDBYIDLE 0
 :: Allow the CPU frequency to drop as much as possible ::
 powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMIN 0
 REM powercfg /setdcvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMIN 0
+
+:: Limit the max CPU usage (may vary from system to system) ::
+powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 99
+REM powercfg /setdcvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 99
 
 :: Disable screen shutdown ::
 powercfg /setacvalueindex %powerPlanGuid% SUB_VIDEO VIDEOIDLE 0

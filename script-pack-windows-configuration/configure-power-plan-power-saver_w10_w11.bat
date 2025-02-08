@@ -5,7 +5,7 @@
 :: Set title and banner ::
 call %utilsPath%\set-title-and-banner "Configure power saver power plan"
 
-:: Set the plan to be modified (BALANCED power plan GUID: a1841308-3541-4fab-bc81-f71556f20b4a) ::
+:: Set the plan to be modified (POWER SAVER power plan GUID: a1841308-3541-4fab-bc81-f71556f20b4a) ::
 set powerPlanGuid=a1841308-3541-4fab-bc81-f71556f20b4a
 
 :: Disable idle disk shutdown ::
@@ -15,6 +15,10 @@ REM powercfg /setdcvalueindex %powerPlanGuid% SUB_DISK DISKIDLE 0
 :: Disable sleep due to inactivity ::
 powercfg /setacvalueindex %powerPlanGuid% SUB_SLEEP STANDBYIDLE 0
 REM powercfg /setdcvalueindex %powerPlanGuid% SUB_SLEEP STANDBYIDLE 0
+
+:: Allow the CPU frequency to drop as much as possible ::
+powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMIN 0
+REM powercfg /setdcvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMIN 0
 
 :: Limit the max CPU usage (may vary from system to system) ::
 powercfg /setacvalueindex %powerPlanGuid% SUB_PROCESSOR PROCTHROTTLEMAX 99
