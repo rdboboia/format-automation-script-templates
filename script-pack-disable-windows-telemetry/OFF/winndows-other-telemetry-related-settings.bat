@@ -53,4 +53,4 @@ set userProfEngPath="HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileE
 :: reg add %userProfEngPath% /v ScoobeSystemSettingEnabled /t REG_DWORD /d 0 /f
 
 :: Requires restart.
-call %utilsPath%\restart-manager
+:: call %utilsPath%\restart-manager
