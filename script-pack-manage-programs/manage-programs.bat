@@ -13,6 +13,8 @@ for /D %%b in (%packExecutorArgs%\*) do (
 		echo Skipping program folder.
 	)
 	
-	call %utilsPath%\print-spacer 6
+	call %utilsPath%\print-spacer 3
+	call %utilsPath%\print-filler 3
+	call %utilsPath%\print-spacer 3
 )
 endlocal
