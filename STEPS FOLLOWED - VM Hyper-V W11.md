@@ -119,7 +119,6 @@
 
 # TODO 👀
 - Disable explorer recent files?
-- Ask for each folder pack if its execution is desired instead of an per file prompt
 - Check admin privileges before proceeding with scripts (most of the scripts need it)
 - Office?
 
