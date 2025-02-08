@@ -24,7 +24,7 @@ for %%f in (%packExecutorArgs%\*.bat) do (
 	echo ======================================================================
 	echo Calling script: %%~f
 	echo ----------------------------------------------------------------------
-	call "%%f"
+	call "%%f" %%~nxf
 	echo ----------------------------------------------------------------------
 	echo Checking error level...
 	call %utilsPath%\check-error-level
