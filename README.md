@@ -24,3 +24,5 @@ Credit to Chris Titus and its CTT Windows Tool (https://christitus.com/windows-t
 
 # Known issues
 - Sometimes "winget" command link seems to break in mid script execution. Close the script execution and start it again. That should fix it.
+- Windows sandbox doesn't work in a VM and when it fails it rollbacks all windows feature changes (in this case both sandbox and hyper-v are rolled back).
+Will look into a way to detect and skip sandbox installation in a VM.
