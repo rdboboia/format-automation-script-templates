@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "Unigine Superposition Benchmark" "Unigine.SuperpositionBenchmark"
+call %utilsPath%\winget-installer "Unigine Superposition Benchmark" "Unigine.SuperpositionBenchmark" "%~1"

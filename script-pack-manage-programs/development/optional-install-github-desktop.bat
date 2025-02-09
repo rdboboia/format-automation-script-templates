@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "GitHub Desktop" "GitHub.GitHubDesktop"
+call %utilsPath%\winget-installer "GitHub Desktop" "GitHub.GitHubDesktop" "%~1"

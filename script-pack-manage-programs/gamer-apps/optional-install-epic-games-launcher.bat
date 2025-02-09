@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "Epic Games Launcher" "EpicGames.EpicGamesLauncher"
+call %utilsPath%\winget-installer "Epic Games Launcher" "EpicGames.EpicGamesLauncher" "%~1"

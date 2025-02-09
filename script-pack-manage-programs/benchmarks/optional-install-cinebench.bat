@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "CinebenchR23" "Maxon.CinebenchR23"
+call %utilsPath%\winget-installer "CinebenchR23" "Maxon.CinebenchR23" "%~1"

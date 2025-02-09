@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "CPUID CPU-Z" "CPUID.CPU-Z"
+call %utilsPath%\winget-installer "CPUID CPU-Z" "CPUID.CPU-Z" "%~1"

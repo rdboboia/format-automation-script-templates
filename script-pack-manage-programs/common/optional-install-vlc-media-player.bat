@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "VLC Media Player" "VideoLAN.VLC"
+call %utilsPath%\winget-installer "VLC Media Player" "VideoLAN.VLC" "%~1"

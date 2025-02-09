@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer "WinRAR" "RARLab.WinRAR"
+call %utilsPath%\winget-installer "WinRAR" "RARLab.WinRAR" "%~1"

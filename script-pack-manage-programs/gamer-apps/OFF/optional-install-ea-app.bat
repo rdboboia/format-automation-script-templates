@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "EA App" "ElectronicArts.EADesktop"
+call %utilsPath%\winget-installer "EA App" "ElectronicArts.EADesktop" "%~1"

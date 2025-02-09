@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "Discord" "Discord.Discord"
+call %utilsPath%\winget-installer "Discord" "Discord.Discord" "%~1"

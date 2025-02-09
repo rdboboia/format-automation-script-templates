@@ -1,2 +1,2 @@
 :: Call installer ::
-call %utilsPath%\winget-installer-optional "Steam" "Valve.Steam"
+call %utilsPath%\winget-installer "Steam" "Valve.Steam" "%~1"
