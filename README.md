@@ -21,3 +21,7 @@ You can kinda keep track of the changes by checking out the "STEPS FOLLOWED - VM
 
 # Credit
 Credit to Chris Titus and its CTT Windows Tool (https://christitus.com/windows-tool/) which helped me find and implement some tweaks.
+
+# Known issues
+- Sometimes "winget" command link seems to break in mid script execution. Close the script execution and start it again. That should fix it.
+- Seems like something is breaking task bar's search function. After all script executions I can't write anything in the start search.
