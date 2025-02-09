@@ -24,4 +24,3 @@ del %tempPowerShellScriptFullPath%
 :: echo %vmCheckerReturnValue%
 
 :end
-pause
