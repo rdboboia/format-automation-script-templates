@@ -9,6 +9,4 @@
 echo %errorlevel%
 if not %errorlevel%==0 if not %errorlevel%==1 if not %errorlevel%==2 if not %errorlevel%==3010 if not %errorlevel%==-1978335189 if not %errorlevel%==-1978335212 (
 	set allScriptsOk=0
-) else (
-	color 0a
 )
