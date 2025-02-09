@@ -1,7 +1,7 @@
 # Legend
 - ✅ - Has an automation script.
 - 👀 - Looking into a way to automate.
-- ⚠ - Manual configuration required (no available script for now).
+- ⚠ - Manual configuration required (no available script for now, but might be possible).
 - ❌ - Automation not possible for now.
 
 
@@ -46,6 +46,11 @@
 - Disable screenshot auto saving ❌
 - Disable screen recoring auto saving ❌
 
+### Task Manager
+- Start at logon ✅
+- Default to "Performance" tab ❌
+- Update frequency to "High" ❌
+
 ## Telemetry & Privacy
 - Disabled "DiagTrack" service ✅
 - Disabled required telemetry data ✅
@@ -58,6 +63,11 @@
 - Install Hyper-V ✅
 - Install Windows Sandbox ✅
 - Remove Recall ✅
+
+
+
+
+
 
 # Drivers
 - Manually install your PC's required drivers ❌
