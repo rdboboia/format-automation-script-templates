@@ -1,10 +1,15 @@
-:: Check if the current system is my VM (change this variable to match your case) ::
-if "%computername%"=="HYPER-V-VM-W11" (goto end)
+:: Call VM checker.
+call %utilsPath%\check-if-system-is-vm
 
-:: Enable Hyper-V feature ::
+:: Check if the current system is a VM.
+if %vmCheckerReturnValue%=="VM" (
+	goto end
+)
+
+:: Enable Hyper-V feature.
 DISM /Online /Enable-Feature /All /FeatureName:Containers-DisposableClientVM
 
-:: Requires restart ::
+:: Requires restart.
 call %utilsPath%\restart-manager
 
 :end

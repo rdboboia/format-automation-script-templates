@@ -21,7 +21,7 @@ for /f "delims=" %%a in ('powershell -ExecutionPolicy Bypass -file "%tempPowerSh
 del %tempPowerShellScriptFullPath%
 
 :printValue
-echo %vmCheckerReturnValue%
+:: echo %vmCheckerReturnValue%
 
 :end
 pause
