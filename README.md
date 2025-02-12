@@ -3,6 +3,9 @@ This is a personal project that I'm currently working on to automate as much as 
 As I've already mentioned, this is something personal: my desired programs, my desired settings, etc.
 However, I think that some of my work can be useful for the rest of the world, so feel free to check it out and use it if any script fits your needs :)
 
+# Utilities
+Feel free to check out the repo for scripts that you may find useful. Most of them can be executed as standalone.
+
 # Considerations BEFORE execution
 - Some scripts requier admin privileges, so the best way is to execute the main script as admin.
 - Some scripts are sensible to user path variations. This can happen if the admin account is not the same as the target user. I'm assuming the target user is the admin executor.
