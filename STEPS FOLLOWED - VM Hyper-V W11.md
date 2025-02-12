@@ -10,10 +10,20 @@
 
 
 # Essentials (must be done BEFORE Windows tuneup)
-- ImDisk Toolkit RAMDisk ✅
-	+ RAMDisk configuration ❌
-	+ Move temp folder to RAMDisk ✅
+- SoftPerfect RAMDisk
+	+ Installation ❌
+	+ RAMDisk configuration
+	+ Change temp folder path to RAMDisk ✅
 	+ Hide temp folder ✅
+
+- ImDisk Toolkit RAMDisk
+	+ Installation ❌
+	+ RAMDisk configuration ❌
+	+ IMPORTANT NOTE:
+		* IMDisk RAMDisk has some compatibility issues with Windws 11's UAC (tested on 24H2).
+		* This makes all installers that require admin privileges to fail with 'Incorrect Function' error message.
+		* Use this RAMDisk only for temporal file storage, but not for installers.
+		* I still use it despite this issue because it allows me to create dynamic RAMDisk volumes.
 
 
 
