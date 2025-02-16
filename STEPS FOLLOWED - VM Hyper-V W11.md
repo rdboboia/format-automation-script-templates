@@ -38,7 +38,7 @@
 - Define custom active hours to avoid restarts ✅
 - Disable Windows Update Delivery Optimization ✅
 
-## Personalization
+## Customization
 
 ### Task Bar
 - Disable web search ✅
@@ -93,10 +93,8 @@
 - Eclipse Adoptium Temurin 17 JDK with HotSpot ✅
 - HWiNFO ✅
 	+ Configuration ⚠
-		* Autostart with Windows
 		* Start minimized
 		* Show sensors only
-		* Define alerts (if desired)
 - Mozilla Firefox ✅
 	+ Configuration can be stored and restored with account sync ✅
 - MSI Afterburner ✅
